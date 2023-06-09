@@ -1,2 +1,1 @@
-#!/bin/bash
-cp -u \8.html . .. | uniq
+cp -r *.html . .. | uniq
