@@ -1,2 +1,6 @@
 #!/bin/bash
+<<<<<<< HEAD
 mv my_first_directory /tmp
+=======
+mkdir /tmp/my_first_directory
+>>>>>>> 18ede6cfb998f65969e7746432325a81f09325b8
