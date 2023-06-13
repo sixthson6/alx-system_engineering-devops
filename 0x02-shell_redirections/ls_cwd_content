@@ -1,0 +1,18 @@
+total 56
+-rw-r--r-- 1 iqroot root  12 Jun 12 06:59 *\'
+-rw-r--r-- 1 iqroot root  12 Jun 12 06:59 *\\'
+drwxr-xr-x 2 iqroot root 268 Jun 12 07:11 .
+drwxr-xr-x 6 iqroot root 155 Jun 12 01:57 ..
+-rwxr-xr-x 1 iqroot root  32 Jun 12 02:02 0-hello_world
+-rwxr-xr-x 1 iqroot root  31 Jun 12 03:13 1-confused_smiley
+-rwxr-xr-x 1 iqroot root  28 Jun 12 03:31 2-hellofile
+-rwxr-xr-x 1 iqroot root  39 Jun 12 03:34 3-twofiles
+-rwxr-xr-x 1 iqroot root  35 Jun 12 03:37 4-lastlines
+-rwxr-xr-x 1 iqroot root  35 Jun 12 03:39 5-firstlines
+-rwxr-xr-x 1 iqroot root  29 Jun 12 03:53 6-third_line
+-rwxr-xr-x 1 iqroot root  36 Jun 12 07:10 8-cwd_state
+-rw-r--r-- 1 iqroot root  27 Jun 12 07:00 *\'"Best
+-rw-r--r-- 1 iqroot root 801 Jun 12 03:43 iacta
+-rw-r--r-- 1 iqroot root   0 Jun 12 07:11 ls_cwd_content
+-rw-r--r-- 1 iqroot root  26 Jun 12 02:13 me
+-rw-r--r-- 1 iqroot root  14 Jun 12 02:00 README.md
