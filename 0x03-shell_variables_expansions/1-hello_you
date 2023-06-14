@@ -1,2 +1,3 @@
 #!/bin/bash
-echo hello $HOSTNAME
+echo "Hello $(whoami),"
+
