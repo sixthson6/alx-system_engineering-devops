@@ -1,2 +1,3 @@
 #!/bin/bash
-declare -p | cut -d ' ' -f 3 | sort
+compgen -A variable -A function | sort
+
