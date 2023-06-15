@@ -1,0 +1,2 @@
+#!/bin/bash
+cat input.txt | ./every_other_line.sh
