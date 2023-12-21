@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#list current contents of directroy
+current_dir=$(pwd)
+for file in "$current_dir"/*
+do
+	filename=$(basename "$file")
+	name_after_dash="${filename#*-}"
+	echo "$name_after_dash"
+done
