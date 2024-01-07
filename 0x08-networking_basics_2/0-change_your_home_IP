@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#script that reconfigures an ubuntu server
+cp /etc/hosts ~/home.new
+echo "127.0.0.2    localhost" > ~/home.new
+echo "8.8.8.8      facebook.com" >> ~/home.new
+cp -f ~/home.new /etc/hosts
