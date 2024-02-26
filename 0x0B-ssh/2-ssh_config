@@ -4,5 +4,5 @@
 Host 100.25.34.201
 	HostName 100.25.34.201
 	User ubuntu
-	IdentifyFile ~/.ssh/school
+	IdentityFile ~/.ssh/school
 	PasswordAuthentication no
