@@ -5,15 +5,15 @@ sudo apt update
 sudo apt-get -y install nginx
 
 # adjust firewall
-sudo ufw allow "Nginx Full"
+# sudo ufw allow "Nginx Full"
 sudo ufw allow "Nginx HTTP"
 
 # configure nginx to listen to port 80
 # First, back up the nginx configuration files
-sudo cp /etc/nginx/nginx.config /etc/nginx/nginx.config.bak
+# sudo cp /etc/nginx/nginx.config /etc/nginx/nginx.config.bak
 
 # update config file to listen to port 80
-sudo sed -i 's/^#\s*listen\s*\(.*\)/listen 80:/g' /etc/nginx/nginx.config
+# sudo sed -i 's/^#\s*listen\s*\(.*\)/listen 80:/g' /etc/nginx/nginx.config
 
 echo 'Hello World!' > /var/www/html/index.nginx-debian.html
 
@@ -21,4 +21,4 @@ echo 'Hello World!' > /var/www/html/index.nginx-debian.html
 sudo nginx -t
 
 # restart nginx to apply changes
-sudo service nginx start
+sudo service nginx restart
