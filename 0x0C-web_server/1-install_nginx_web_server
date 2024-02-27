@@ -21,4 +21,4 @@ echo 'Hello World!' > /var/www/html/index.nginx-debian.html
 sudo nginx -t
 
 # restart nginx to apply changes
-sudo service nginx restart
+sudo service nginx start
