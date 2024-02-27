@@ -6,6 +6,7 @@ sudo apt-get -y install nginx
 
 # adjust firewall
 sudo ufw allow "Nginx Full"
+sudo ufw allow "Nginx HTTP"
 
 # configure nginx to listen to port 80
 # First, back up the nginx configuration files
