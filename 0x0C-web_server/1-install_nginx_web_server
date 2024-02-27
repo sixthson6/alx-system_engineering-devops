@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# install nginx and configure to listen to port 80
+
+sudo apt update
+sudo apt-get -y install nginx
+
+# adjust firewall
+sudo ufw allow "Nginx Full"
+
+# configure nginx to listen to port 80
+# First, back up the nginx configuration files
+sudo cp /etc/nginx/nginx.config /etc/nginx/nginx.config.bak
+
+# update config file to listen to port 80
+sudo sed -i 's/listen\s*\(.*\)/listen 80:/g' /etc/nginx/nginx.config
+
+# test nginx for errors
+sudo nginx -t
+
+# restart nginx to apply changes
+sudo service nginx restart
