@@ -12,7 +12,9 @@ sudo ufw allow "Nginx Full"
 sudo cp /etc/nginx/nginx.config /etc/nginx/nginx.config.bak
 
 # update config file to listen to port 80
-sudo sed -i 's/listen\s*\(.*\)/listen 80:/g' /etc/nginx/nginx.config
+sudo sed -i 's/^#\s*listen\s*\(.*\)/listen 80:/g' /etc/nginx/nginx.config
+
+echo 'Hello World!' > /var/www/html/index.nginx-debian.html
 
 # test nginx for errors
 sudo nginx -t
