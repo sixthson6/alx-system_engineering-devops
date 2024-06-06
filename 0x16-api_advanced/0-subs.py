@@ -8,7 +8,7 @@ import requests
 
 def number_of_subscribers(subreddit):
     url = f"https://www.reddit.com/r/{subreddit}/about.json"
-    sub = requests.get(url)
+    sub = requests.get(url, allow_redirects=False)
     if sub.status_code == 200:
         subs = sub.json()
         if 'data' in subs and 'subscribers' in subs['data']:
