@@ -9,7 +9,7 @@ if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com/"
     users = requests.get(url + "users").json()
 
-    with open("todo_all_employees.json", "w") as jsonfile:
+    with open("todo_all_employees.json", "w", newline="", encoding="utf-8") as jsonfile:
         json.dump({
             u.get("id"): [{
                 "username": u.get("username"),
