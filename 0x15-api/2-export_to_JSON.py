@@ -21,7 +21,8 @@ if __name__ == "__main__":
                 username = n['username']
 
     # Get Todos
-    r = requests.get('https://jsonplaceholder.typicode.com/todos/', params={"userId": id}).json()
+    r = requests.get('https://jsonplaceholder.typicode.com/todos/',
+                     params={"userId": id}).json()
 
     # Write to file as json
     with open(file, 'w', newline='', encoding='utf-8') as f:
@@ -30,5 +31,3 @@ if __name__ == "__main__":
             "completed": t.get("completed"),
             "username": username
             } for t in r]}, f)
-    
-
