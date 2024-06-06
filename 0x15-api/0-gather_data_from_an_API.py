@@ -22,4 +22,4 @@ if __name__ == "__main__":
                                                               count))
         for item in data:
             if item['userId'] == id and item['completed'] is True:
-                print("     {}".format(item['title']))
+                print("\t {}".format(item['title']))
