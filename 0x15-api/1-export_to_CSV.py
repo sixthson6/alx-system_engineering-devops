@@ -29,7 +29,7 @@ if __name__ == "__main__":
         employee_name = None
         for n in name:
             if n['id'] == i:
-                employee_name = n['name']
+                employee_name = n['username']
         for item in data:
             if item['userId'] == i:
                 row = [item['userId'], employee_name,
