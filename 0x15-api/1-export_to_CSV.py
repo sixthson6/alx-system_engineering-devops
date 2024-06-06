@@ -22,7 +22,7 @@ if __name__ == "__main__":
 
     # Write to csv file
     r = requests.get('https://jsonplaceholder.typicode.com/todos/')
-    em_name = requests.get('https://jsonplaceholder.typicode.com/users/') 
+    em_name = requests.get('https://jsonplaceholder.typicode.com/users/')
     if r.status_code == 200 and em_name.status_code == 200:
         data = r.json()
         name = em_name.json()
@@ -32,10 +32,8 @@ if __name__ == "__main__":
                 employee_name = n['name']
         for item in data:
             if item['userId'] == i:
-                row = [item['userId'], employee_name, item['completed'], item['title']]
+                row = [item['userId'], employee_name,
+                       item['completed'], item['title']]
                 c.writerow(row)
     # Close file
     f.close()
-
-
-
