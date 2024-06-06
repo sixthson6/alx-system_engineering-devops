@@ -19,7 +19,7 @@ if __name__ == "__main__":
             if n['id'] == id:
                 employee_name = n['name']
         print("Employee {} is done with tasks({}/20):".format(employee_name,
-                                                             count))
+                                                              count))
         for item in data:
             if item['userId'] == id and item['completed'] is True:
                 print("\t{}".format(item['title']))
