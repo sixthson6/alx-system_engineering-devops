@@ -1,7 +1,7 @@
 # Postmortem: Apache 500 Error Outage
 
 ## Problem Source: Web_Stack_Debugging_3
-
+![Problem-arises](404.png)
 ### Issue Summary:
 
 * Duration: The outage lasted from 10:00 AM to 12:30 PM UTC.
