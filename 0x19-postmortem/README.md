@@ -2,7 +2,7 @@
 
 ## Problem Source: Web_Stack_Debugging_
 
-![Problem-arises](https://docs.google.com/document/d/1AWDzYm91Fad1Tsd-PowgresUfEnGA4PywLBSkgxlRQM/edit?usp=sharing)
+![Problem-arises](404.png)
 
 ### Issue Summary:
 
