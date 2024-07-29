@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# display server dns status
+
+func () {
+	dom=$1
+	sub="$2"
+
+	if [ "$#" -eq 2 ]
+	then
+	  url="$sub.$dom"
+	else
+	  url="$dom"
+	fi
+
+	read sub_domain record_type destination < <(dig "$url" | grep -A1 'ANSWER SECTION:' | awk 'NR==2 {print $1, $4, $5}')
+
+	echo "The subdomain $sub is a $record_type record and points to $destination"
+}
+
+func "$@"
