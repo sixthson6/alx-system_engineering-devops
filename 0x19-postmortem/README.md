@@ -1,6 +1,7 @@
 
 # Issue Summary
-![Bug-in-computer](The_great_apache_outage.png)
+![Downtime timeline](a_crashed_web_server.jpeg)
+
 ## Duration: The Apache server experienced a 2.5-hour outage, commencing at 10:00 AM UTC and concluding at 12:30 PM UTC.
 ## Impact: Approximately 80% of users encountered difficulties accessing websites hosted on the server due to a 500 Internal Server Error.
 ## Root Cause Analysis: An incorrect configuration in the Apache server settings, introduced during a recent feature deployment, was identified as the primary cause of the issue.
@@ -14,7 +15,7 @@
 ### 11:30 AM UTC: The DevOps team pinpointed the misconfiguration in Apache server settings as the root cause.
 ### 12:00 PM UTC: The misconfiguration was rectified, and the Apache server was restarted.
 ### 12:30 PM UTC: Services were restored, and users regained access to affected websites.
-![Downtime timeline](a_crashed_web_server.jpeg)
+![Bug-in-computer](The_great_apache_outage.png)
 ## Root Cause and Resolution:
 ### The Apache server's misconfiguration stemmed from an error in the virtual host configuration file, specifically an incorrect definition of the WordPress classes PHP file extension (.phpp instead of .php).
 ### Resolution involved correcting the virtual host configuration file via a Puppet manifest and restarting Apache to apply the changes.
