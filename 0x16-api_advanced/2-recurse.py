@@ -30,7 +30,6 @@ def recurse(subreddit, hot_list=[], after="", count=0):
         after = results.get("after")
         count += results.get("dist")
 
-
         for c in results.get("children"):
             hot_list.append(c.get("data").get("title"))
 
